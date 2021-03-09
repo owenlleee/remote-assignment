@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-hent">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>RWD-pratice</title>
+</head>
+<body>
+    <div class="container">
+        <!-- 導覽列區塊 -->
+        <div class="block A">
+            <ul style="float: left;">
+                <img src="" alt="">Title
+            </ul>
+            <!-- 屏幕寬度800px以上的nav -->
+            <ul class="nav">
+                <li><a href="">Home</a></li>
+                <li><a href="">Product</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+            <!-- 屏幕寬度800px以下的fixed-nav -->
+            <ul class="navtwo" style="list-style: none;">
+                <li style="float: right;"><button id="menuicon">☰</button></li>
+            </ul>
+            <!-- 按下menu後顯示的清單 -->
+            <div id="menuclick">
+                <ul style="list-style: none;">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Product</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- 頭版 -->
+        <div class="block B">
+            <h1 id="frontpage">Welcome to page!</h1>
+        </div>
+        <!-- 主要內容 -->
+        <div class="block C">
+            <div class="initialcontent">
+                <div class="content one"><p>A</p></div>
+                <div class="content two"><p>A</p></div>
+                <div class="content three"><p>A</p></div>
+                <div class="content four"><p>A</p></div>
+            </div>
+            <div class="hiddencontent">
+                <div class="content five"><p>A</p></div>
+                <div class="content six"><p>A</p></div>
+                <div class="content seven"><p>A</p></div>
+                <div class="content eight"><p>A</p></div>
+            </div>
+        </div>
+        <button id="showmore">顯示更多內容</button>
+    </div>
+    <script src="./javascript.js"></script>
+</body>
+</html>
